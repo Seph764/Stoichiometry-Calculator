@@ -1,0 +1,10 @@
+Official Changelog for the Stoichiometry Calculator:
+
+V1.0.0:
+
+- initial release
+
+V1.0.1:
+
+- added changelog, readme, and Python 3.9.4 Installer.exe files
+- adjusted main file imports
