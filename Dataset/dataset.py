@@ -29,6 +29,7 @@ class Element:
         print("Its atomic number is " + element.an + ".")
         print("Its atomic mass is " + element.am + ".")
 
+# Unused element table. Might use in a future release.
 H = Element("Hydrogen", "H", str(1), str(1.00795))
 He = Element("Helium", "He", str(2), str(4.00260))
 Li = Element("Lithium", "Li", str(3), str(6.941))

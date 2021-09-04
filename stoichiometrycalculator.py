@@ -1,16 +1,12 @@
 from Dataset.dataset import elementdict
-from StartingValues.startingvalues import ValOfStart, NumOfElmntsStart, NumOfElmntsEnd, MolRatioNum, MolRatioDenom, PrintData
-from ConfirmationQuestions.isthisokayyes import IsThisOkayYes
-from ConfirmationQuestions.isthisokayno import IsThisOkayNo
-from ChangeItems.changeanythingelse import ChangeAnythingElse
+from StartingValues.startingvalues import *
+from ConfirmationQuestions.isthisokayyes import *
+from ConfirmationQuestions.isthisokayno import *
+from ChangeItems.changeanythingelse import *
 
-print("Stoichiometry Calculator Stable Production Release V1.0.1")
-print("Built by Paul D.")
-print("Copyright © 2021. All rights reserved.\n")
-
-print("Please leave all feedback at the following email address: pvdorman764@gmail.com\n")
-
-print("If you don't know what stoichiometry is, please consult the following Wiki article: https://en.wikipedia.org/wiki/Stoichiometry\n")
+print("Stoichiometry Calculator Beta Release v0.2.0")
+print("Originally built and licensed by Paul D.")
+print("This software is licensed under the GNU General Public License, Version 3.0.\n")
 
 while True:
     try:
@@ -53,6 +49,10 @@ while True:
     while True:
         ContinueCalculation = input("Would you like to continue calculating stoichiometry? (Y/N)")
         if ContinueCalculation=='Y' or ContinueCalculation=='y':
+            StartingElementList.clear()
+            StartingAtomicMassList.clear()
+            EndingElementList.clear()
+            EndingAtomicMassList.clear()
             break
         elif ContinueCalculation=='N' or ContinueCalculation=='n':
             break
